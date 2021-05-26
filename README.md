@@ -44,6 +44,15 @@ Frac is the second generation custom game engine and is the combined effort of 7
 
 For this engine I also tried applying knowledge I have learned from books such as clean architecture and data oriented design. as well as programming patterns and using 3D game engine design as a tool with some engine design problems such as tackeling input as well as engine entry / construction.
 
+### What did I work on?
+My main role this block was designing the engine and writing some of the harder systems that required templates to work. I also tried to assist other programmers to write code in Frac and help them getting used to Frac. And help them with any issues that arose. We used Flecs as an ECS that had some intresting quirks and problems so helping programmers go trough that minefield took a suprising amouth of time. 
+
+For the ECS we wanted to write a wrapper so we didn't explose flecs directly into the engine. Looking back at it was the wrong descision but not exposing flecs to the engine seemed like a good idea and supported by ideas and principles written in clean achitecture. However for this project it ended up in being a large chunck of maintanance and provided very little benefit. I basically designed and wrote the entire wrapper around flecs. Although its turned out this wasn't the best desicion after using it to make a game it was something we agreed on as a team would be needed It provided plenty of challanges and learning opertunities.
+- [ECS wrapper](https://github.com/mcmlevi/Portfolio_Levi_de_koning/blob/main/Custom%20Game%20Engines/Frac/FracEngine/include/Core/ECSWrapper.h)
+- [Querry wrapper](https://github.com/mcmlevi/Portfolio_Levi_de_koning/blob/main/Custom%20Game%20Engines/Frac/FracEngine/include/Core/Query.h)
+- [System wrapper](https://github.com/mcmlevi/Portfolio_Levi_de_koning/blob/main/Custom%20Game%20Engines/Frac/FracEngine/include/Core/System.h)
+
+For this project I also wrote the first version for quite some systems that other programmers took up and adapted and improved. For example in Thorium I wrote a wildcard system that was used as inspiration for the newer version in Frac written by Danny Kruiswijk. I also wrote the first version of the text renderer during the second semester of the 2nd year that got picked up by Dion van der wateren and got expanded and improved to fit the needs of Frac. 
 # CPU RayTracer
 
 ![DOF](https://user-images.githubusercontent.com/39926733/119718849-5e208d80-be68-11eb-9e7a-fb83c2e16846.png)
