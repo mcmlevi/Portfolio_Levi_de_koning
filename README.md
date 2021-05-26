@@ -24,7 +24,7 @@ Some of the featues of Thorium:
 - custom memory allocators using https://github.com/mtrebi/memory-allocators and expended to support the ps4. 
 
 ### What did I do for the project?
-As mentioned above I mainly focused on the engine and almost had no hands in the engine and gameplay code. 
+As mentioned above I mainly focused on the engine and almost had no hands in the engine and gameplay code. I also wrote the imput handling and had my hands in some of the core files in our engine such as the event dispatcher that was used for systems to communicate. I also implemented the audio system based of Bojan Endrovski system and adapted it to fit in a ECS and our engine. I also wrote most of the IMGUI ui in the engine. such as the hiarchy tool, and component "inspector" 
 Some of the the files I worked on for this project:
 - [Message logger](https://github.com/mcmlevi/Portfolio_Levi_de_koning/blob/main/Custom%20Game%20Engines/Thorium/TowerDefensePS4/Projects/Thorium/include/Core/MessageLogger.h)
 - [input handler](https://github.com/mcmlevi/Portfolio_Levi_de_koning/blob/main/Custom%20Game%20Engines/Thorium/TowerDefensePS4/Projects/Thorium/include/Events/InputHandler.h)
