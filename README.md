@@ -76,7 +76,7 @@ This Project allowed me to explore the things I realy liked as I was allowed com
 ### Future work and further development:
 In my free time I am / was working on a new raytracer that focused even more on speed dropping other things such as primatives. In the end this turned out to be a failure however some of the things in this small project where quite cool I think. The performance improvement was very significant Compared to my old project I was able to run high poly objects in a much better frame time with similar features. I contribute this mainly to an improvement in the BVH and code structure and experienced gained during my 2 years at breda university. I also made some other improvements such as caching Bounding volume hiarchies to generate them them near instantaniously. As I was using binning to generate high quality BVHs of models. Although binning is rather fast with the amouth of tests I was doing this would still be to long to make programm quick to load and debug. So caching the BVH reduced loading times from 2-3 minutes on debug to less than a second on debug. ( for some reason MSVS realy didn't like the BVH creation and on clang this process was much faster from 2-3 minutes to a few seconds on debug) I also implemented skyboxes in this new raytracer.
 
-#Wacky noodle
+# Wacky noodle
 ![WackyNoodle_Promo_WithLogo](https://user-images.githubusercontent.com/39926733/119739684-df851980-be82-11eb-9d5f-ee175833957a.png)
 Wacky noodle is a game we released on [itch.io](https://buas.itch.io/wacky-noodle), This Project was made unreal engine over the course of 4 weeks. It has local multiplayer support. The team consisted of 2 programmers, 3 artists and 4 designers. 
 
