@@ -1,0 +1,25 @@
+﻿  AABB.cpp
+  Camera.cpp
+  CornelBoxScene.cpp
+  fakeScene.cpp
+  Mesh.cpp
+  meshTestScene.cpp
+  OBox.cpp
+  Plane.cpp
+  Ray.cpp
+  RayTracer.cpp
+  Scene.cpp
+  SFMLWrapper.cpp
+  Shape.cpp
+  Sphere.cpp
+  testScene.cpp
+  Transform.cpp
+  Triangle.cpp
+C:\Perforce\Levi190031\Y1\BlockB\RayTracer\RayTracer\Mesh.cpp(134,20): warning C4018: '<': signed/unsigned mismatch
+C:\Perforce\Levi190031\Y1\BlockB\RayTracer\RayTracer\Mesh.cpp(139,20): warning C4018: '<': signed/unsigned mismatch
+C:\Perforce\Levi190031\Y1\BlockB\RayTracer\RayTracer\Mesh.cpp(144,20): warning C4018: '<': signed/unsigned mismatch
+C:\Perforce\Levi190031\Y1\BlockB\RayTracer\RayTracer\Scene.cpp(13,25): warning C4018: '<': signed/unsigned mismatch
+  week5Scene.cpp
+  week8Reference.cpp
+  World.cpp
+  RayTracer.vcxproj -> C:\Perforce\Levi190031\Y1\BlockB\RayTracer\x64\Debug\RayTracer.lib
