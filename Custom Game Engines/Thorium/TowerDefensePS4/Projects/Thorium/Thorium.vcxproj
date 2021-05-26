@@ -1,0 +1,593 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ORBIS">
+      <Configuration>Debug</Configuration>
+      <Platform>ORBIS</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ORBIS">
+      <Configuration>Release</Configuration>
+      <Platform>ORBIS</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4F6DFE8F-4B7C-4F9A-A17D-D7F83B611028}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <PlatformToolset>v142</PlatformToolset>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <PlatformToolset>v142</PlatformToolset>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <PropertyGroup Condition="'$(DebuggerFlavor)'=='ORBISDebugger'" Label="OverrideDebuggerDefaults">
+    <!--LocalDebuggerCommand>$(TargetPath)</LocalDebuggerCommand-->
+    <!--LocalDebuggerCommandArguments></LocalDebuggerCommandArguments-->
+    <!--LocalDebuggerTarget></LocalDebuggerTarget-->
+    <!--LocalDebuggerWorkingDirectory>$(ProjectDir)</LocalDebuggerWorkingDirectory-->
+    <!--LocalRunCommandLine></LocalRunCommandLine-->
+  </PropertyGroup>
+  <ImportGroup Label="ExtensionSettings">
+    <Import Condition="Exists('$(VCTargetsPath)\BuildCustomizations\OrbisWavePsslc.props')" Project="$(VCTargetsPath)\BuildCustomizations\OrbisWavePsslc.props" />
+    <Import Condition="Exists('$(VCTargetsPath)\BuildCustomizations\SCU.props')" Project="$(VCTargetsPath)\BuildCustomizations\SCU.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\PropertySheets\ThoriumProps.props" />
+    <Import Project="..\PropertySheets\ORBISProps.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\PropertySheets\ThoriumProps.props" />
+    <Import Project="..\PropertySheets\ORBISProps.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="..\PropertySheets\ThoriumProps.props" />
+    <Import Project="..\PropertySheets\Win64Props.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="..\PropertySheets\ThoriumProps.props" />
+    <Import Project="..\PropertySheets\Win64Props.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <CustomBuildAfterTargets>
+    </CustomBuildAfterTargets>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(ProjectDir)include;$(DependencyDir)entt\single_include\;$(DependencyDir)glm\;$(IncludePath);$(DependencyDir)spdlog\include\;$(DependencyDir)signals\</IncludePath>
+    <SourcePath>$(SourcePath)</SourcePath>
+    <CustomBuildAfterTargets>
+    </CustomBuildAfterTargets>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">
+    <ClCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <CppLanguageStd>Cpp17</CppLanguageStd>
+      <WarningsAsErrors>false</WarningsAsErrors>
+      <CppExceptions>true</CppExceptions>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DisableSpecificWarnings>comment</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories>$(ProjectDir)include;$(ProjectDir)deps\;$(DependencyDir)entt\single_include\;$(DependencyDir)glm\;$(DependencyDir)spdlog\include\;$(DependencyDir)signals\;$(ProjectDir)deps\FMOD\PS4\fsbank\inc\;$(ProjectDir)deps\FMOD\PS4\studio\inc\;$(ProjectDir)deps\FMOD\PS4\core\inc\;%(AdditionalIncludeDirectories);%(AdditionalIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <PostBuildEvent>
+      <Message>Building doxygen</Message>
+    </PostBuildEvent>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+    <OrbisWavePsslc>
+      <OutputFileName>$(OutDir)res\shaders\%(FileName).sb</OutputFileName>
+    </OrbisWavePsslc>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">
+    <ClCompile>
+      <PreprocessorDefinitions>NDEBUG;_RELEASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <OptimizationLevel>Level2</OptimizationLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <CppLanguageStd>Cpp17</CppLanguageStd>
+      <WarningsAsErrors>false</WarningsAsErrors>
+      <CppExceptions>true</CppExceptions>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DisableSpecificWarnings>comment</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories>$(ProjectDir)include;$(ProjectDir)deps\;$(DependencyDir)entt\single_include\;$(DependencyDir)glm\;$(DependencyDir)spdlog\include\;$(DependencyDir)signals\;$(ProjectDir)deps\FMOD\PS4\fsbank\inc\;$(ProjectDir)deps\FMOD\PS4\studio\inc\;$(ProjectDir)deps\FMOD\PS4\core\inc\;;%(AdditionalIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <PostBuildEvent>
+      <Message>Building doxygen</Message>
+    </PostBuildEvent>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+    <OrbisWavePsslc>
+      <OutputFileName>$(OutDir)res\shaders\%(FileName).sb</OutputFileName>
+    </OrbisWavePsslc>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <PreprocessorDefinitions>_RELEASE;PLATFORM_WIN64</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Thpch.h</PrecompiledHeaderFile>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <SupportJustMyCode>true</SupportJustMyCode>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalIncludeDirectories>$(ProjectDir)include\;$(ProjectDir)deps\;$(ProjectDir)deps\spdlog\include\;$(ProjectDir)deps\signals\;$(ProjectDir)deps\FMOD\Windows\fsbank\inc\;$(ProjectDir)deps\FMOD\Windows\studio\inc\;$(ProjectDir)deps\FMOD\Windows\core\inc\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <CustomBuildStep />
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+    <CustomBuildStep />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <PreprocessorDefinitions>_DEBUG;PLATFORM_WIN64</PreprocessorDefinitions>
+      <WarningLevel>Level4</WarningLevel>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Thpch.h</PrecompiledHeaderFile>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <SupportJustMyCode>true</SupportJustMyCode>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalIncludeDirectories>$(ProjectDir)include\;$(ProjectDir)deps\;$(ProjectDir)deps\spdlog\include\;$(ProjectDir)deps\signals\;$(ProjectDir)deps\FMOD\Windows\fsbank\inc\;$(ProjectDir)deps\FMOD\Windows\studio\inc\;$(ProjectDir)deps\FMOD\Windows\core\inc\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <CustomBuildStep />
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <Lib>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+    </Lib>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+    <CustomBuildStep />
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="include\Components\AmbientLightComponent.h" />
+    <ClInclude Include="include\Components\BoxColliderComponent.h" />
+    <ClInclude Include="include\Components\CameraComponent.h" />
+    <ClInclude Include="include\Components\LightComponent.h" />
+    <ClInclude Include="include\Components\NameComponent.h" />
+    <ClInclude Include="include\Components\TransformComponent.h" />
+    <ClInclude Include="include\Core\Audio\AudioComponent.h" />
+    <ClInclude Include="include\Core\Audio\AudioManager.h" />
+    <ClInclude Include="include\Core\Audio\AudioSystem.h" />
+    <ClInclude Include="include\core\Core.h" />
+    <ClInclude Include="include\Core\EntryPoint.h" />
+    <ClInclude Include="include\Core\MessageLogger.h" />
+    <ClInclude Include="include\Core\Resource.h" />
+    <ClInclude Include="include\Core\ResourceManager.h" />
+    <ClInclude Include="include\Core\Systems.h" />
+    <ClInclude Include="include\Core\WorldManager.h" />
+    <ClInclude Include="include\Events\Delegate.h" />
+    <ClInclude Include="include\Events\EventArgs.h" />
+    <ClInclude Include="include\Events\EventMessenger.h" />
+    <ClInclude Include="include\Events\InputHandler.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="include\Events\KeyCodes.h" />
+    <ClInclude Include="include\Graphics\D3D12\D3D12CommandList.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\D3D12\D3D12CommandQueue.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\D3D12\D3D12DebugRenderer.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\D3D12\D3D12Device.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\D3D12\D3D12RenderContext.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\D3D12\D3D12Renderer.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\D3D12\D3D12ResourceLoader.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\D3D12\D3DCommandQueue.h" />
+    <ClInclude Include="include\Graphics\DebugRenderer.h" />
+    <ClInclude Include="include\Graphics\ImGui\D3D12ImGuiInstance.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\ImGui\imconfig.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\ImGui\imgui.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\ImGui\ImGuizmo.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\ImGui\imgui_impl_dx12.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\ImGui\imgui_impl_win32.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\ImGui\imgui_internal.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\ImGui\imstb_rectpack.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\ImGui\imstb_textedit.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\ImGui\imstb_truetype.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\ImGui\Layers\ConsoleLayer.h" />
+    <ClInclude Include="include\Graphics\ImGui\Layers\DockingLayer.h" />
+    <ClInclude Include="include\Graphics\ImGui\Layers\IImguiLayer.h" />
+    <ClInclude Include="include\Graphics\ImGui\Layers\SceneGraphLayer.h" />
+    <ClInclude Include="include\Graphics\ModelLoading\GLTFFactory.h" />
+    <ClInclude Include="include\Graphics\ModelLoading\GLTFFactoryWin.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\ModelLoading\IModelFactory.h" />
+    <ClInclude Include="include\Graphics\ModelLoading\ObjFactory.h" />
+    <ClInclude Include="include\Graphics\ModelLoading\ObjFactoryWin.h" />
+    <ClInclude Include="include\Graphics\RenderContext.h" />
+    <ClInclude Include="include\Graphics\RenderCore.h" />
+    <ClInclude Include="include\Graphics\RenderDevice.h" />
+    <ClInclude Include="include\Graphics\Renderer.h" />
+    <ClInclude Include="include\Graphics\RenderProfiling\D3D12RenderProfile.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\RenderProfiling\RenderProfile.h" />
+    <ClInclude Include="include\Graphics\RenderProfiling\RenderProfileType.h" />
+    <ClInclude Include="include\Graphics\ResourceLoader.h" />
+    <ClInclude Include="include\Graphics\Window\Win32Window.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\Window\Window.h" />
+    <ClInclude Include="include\Input\ControllerState.h" />
+    <ClInclude Include="include\Input\IController.h" />
+    <ClInclude Include="include\Input\WinController.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="include\IO\json.hpp" />
+    <ClInclude Include="include\IO\stb_image.h" />
+    <ClInclude Include="include\IO\stb_image_write.h" />
+    <ClInclude Include="include\IO\tiny_gltf.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="include\IO\tiny_obj_loader.h" />
+    <ClInclude Include="include\Memory\Allocator.h" />
+    <ClInclude Include="include\Memory\CAllocator.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="include\Memory\DoublyLinkedList.h" />
+    <ClInclude Include="include\Memory\FreeListAllocator.h" />
+    <ClInclude Include="include\Memory\LinearAllocator.h" />
+    <ClInclude Include="include\Memory\MemoryDefines.h" />
+    <ClInclude Include="include\Memory\MemoryManager.h" />
+    <ClInclude Include="include\Memory\PoolAllocator.h" />
+    <ClInclude Include="include\Memory\SinglyLinkedList.h" />
+    <ClInclude Include="include\Memory\StackAllocator.h" />
+    <ClInclude Include="include\Memory\StackLinkedList.h" />
+    <ClInclude Include="include\Memory\ThFreeListAllocator.h" />
+    <ClInclude Include="include\Memory\ThLinearAllocator.h" />
+    <ClInclude Include="include\Memory\ThPoolAllocator.h" />
+    <ClInclude Include="include\Memory\ThStackAllocator.h" />
+    <ClInclude Include="include\Memory\Utils.h" />
+    <ClInclude Include="include\Resources\D3D12\D3D12Shader.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="include\Resources\D3D12\D3D12Buffer.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="include\Resources\D3D12\D3D12IndexBuffer.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="include\Resources\D3D12\D3D12Mesh.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="include\Resources\D3D12\D3D12Resource.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="include\Resources\D3D12\D3D12UploadBuffer.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="include\Resources\D3D12\D3D12Vertex.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="include\Resources\D3D12\D3D12VertexBuffer.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="include\Resources\EModelFileType.h" />
+    <ClInclude Include="include\Resources\Material.h" />
+    <ClInclude Include="include\Resources\Mesh.h" />
+    <ClInclude Include="include\Components\ModelComponent.h" />
+    <ClInclude Include="include\Resources\Shader.h" />
+    <ClInclude Include="include\Resources\Texture.h" />
+    <ClInclude Include="include\Resources\Vertex.h" />
+    <ClInclude Include="include\Thpch.h" />
+    <ClInclude Include="include\Utility\D3DErrorHandler.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="include\Utility\d3dx12.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="include\Utility\Timer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Components\CameraComponent.cpp" />
+    <ClCompile Include="src\Components\LightComponent.cpp" />
+    <ClCompile Include="src\Components\ModelComponent.cpp" />
+    <ClCompile Include="src\Components\TransformComponent.cpp" />
+    <ClCompile Include="src\Core\Audio\AudioComponent.cpp" />
+    <ClCompile Include="src\Core\Audio\AudioManager.cpp" />
+    <ClCompile Include="src\Core\Audio\AudioSystem.cpp" />
+    <ClCompile Include="src\Core\MessageLogger.cpp" />
+    <ClCompile Include="src\Events\EventMessenger.cpp" />
+    <ClCompile Include="src\Events\InputHandler.cpp" />
+    <ClCompile Include="src\Graphics\D3D12\D3D12CommandList.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="src\Graphics\D3D12\D3D12CommandQueue.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="src\Graphics\D3D12\D3D12DebugRenderer.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="src\Graphics\D3D12\D3D12Device.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="src\Graphics\D3D12\D3D12RenderContext.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="src\Graphics\D3D12\D3D12ResourceLoader.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="src\Graphics\ImGui\D3D12ImGuiInstance.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="src\Graphics\ImGui\imgui.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">true</ExcludedFromBuild>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\Graphics\ImGui\ImGuizmo.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">true</ExcludedFromBuild>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\Graphics\ImGui\imgui_demo.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="src\Graphics\ImGui\imgui_draw.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">true</ExcludedFromBuild>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\Graphics\ImGui\imgui_impl_dx12.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">true</ExcludedFromBuild>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\Graphics\ImGui\imgui_impl_win32.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">true</ExcludedFromBuild>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\Graphics\ImGui\imgui_widgets.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">true</ExcludedFromBuild>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\Graphics\ImGui\Layers\ConsoleLayer.cpp" />
+    <ClCompile Include="src\Graphics\ImGui\Layers\DockingLayer.cpp" />
+    <ClCompile Include="src\Graphics\ImGui\Layers\SceneGraphLayer.cpp" />
+    <ClCompile Include="src\Graphics\ModelLoading\GLTFFactoryWin.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="src\Graphics\ModelLoading\IModelFactory.cpp" />
+    <ClCompile Include="src\Graphics\ModelLoading\ObjFactoryWin.cpp" />
+    <ClCompile Include="src\Graphics\RenderCore.cpp" />
+    <ClCompile Include="src\Input\IController.cpp" />
+    <ClCompile Include="src\Input\WinController.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="src\IO\tiny_gltf.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">NotUsing</PrecompiledHeader>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="src\IO\tiny_obj_loader.cc" />
+    <ClCompile Include="src\core\Core.cpp" />
+    <ClCompile Include="src\Core\Resource.cpp" />
+    <ClCompile Include="src\Core\ResourceManager.cpp" />
+    <ClCompile Include="src\Core\Systems.cpp" />
+    <ClCompile Include="src\Core\WorldManager.cpp" />
+    <ClCompile Include="src\Events\Delegate.cpp" />
+    <ClCompile Include="src\Events\EventArgs.cpp" />
+    <ClCompile Include="src\Graphics\D3D12\D3D12Renderer.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="src\Graphics\Window\Win32Window.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="src\Memory\Allocator.cpp" />
+    <ClCompile Include="src\Memory\CAllocator.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="src\Memory\FreeListAllocator.cpp" />
+    <ClCompile Include="src\Memory\LinearAllocator.cpp" />
+    <ClCompile Include="src\Memory\MemoryManager.cpp" />
+    <ClCompile Include="src\Memory\PoolAllocator.cpp" />
+    <ClCompile Include="src\Memory\StackAllocator.cpp" />
+    <ClCompile Include="src\Resources\D3D12\D3D12Buffer.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="src\Resources\D3D12\D3D12IndexBuffer.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="src\Resources\D3D12\D3D12Mesh.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="src\Resources\D3D12\D3D12Resource.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="src\Resources\D3D12\D3D12Shader.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="src\Resources\D3D12\D3D12UploadBuffer.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="src\Resources\D3D12\D3D12Vertex.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="src\Resources\D3D12\D3D12VertexBuffer.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="src\Thpch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\Utility\D3DErrorHandler.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="src\Utility\Timer.cpp" />
+  </ItemGroup>
+  <Import Condition="'$(ConfigurationType)' == 'Makefile' and Exists('$(VCTargetsPath)\Platforms\$(Platform)\SCE.Makefile.$(Platform).targets')" Project="$(VCTargetsPath)\Platforms\$(Platform)\SCE.Makefile.$(Platform).targets" />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Condition="Exists('$(VCTargetsPath)\BuildCustomizations\OrbisWavePsslc.targets')" Project="$(VCTargetsPath)\BuildCustomizations\OrbisWavePsslc.targets" />
+    <Import Condition="Exists('$(VCTargetsPath)\BuildCustomizations\SCU.targets')" Project="$(VCTargetsPath)\BuildCustomizations\SCU.targets" />
+  </ImportGroup>
+</Project>

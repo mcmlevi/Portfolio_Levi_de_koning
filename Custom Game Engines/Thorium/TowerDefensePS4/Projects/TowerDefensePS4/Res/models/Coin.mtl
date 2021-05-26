@@ -1,0 +1,45 @@
+# Blender MTL File: 'tree.blend'
+# Material Count: 4
+
+newmtl CoinMat
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.693872 0.528943 0.021094
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\Niels\Desktop\coins\coin00_alb.png
+
+newmtl CoinMat_NONE
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.693872 0.528943 0.021094
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl CoinMatdarker
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.693872 0.360985 0.003803
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\Niels\Desktop\coins\coin00_alb.png
+
+newmtl CoinMatdarker2
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.295684 0.157035 0.002533
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\Niels\Desktop\coins\coin00_alb.png

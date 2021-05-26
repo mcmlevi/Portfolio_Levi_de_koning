@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;Glad.lib;Glm.lib;DearImGui.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)bin\$(Configuration)\$(Platform)\lib\Glad\;$(SolutionDir)bin\$(Configuration)\$(Platform)\lib\Glm\;$(SolutionDir)bin\$(Configuration)\$(Platform)\lib\CoreRenderAPI\;$(SolutionDir)bin\$(Configuration)\$(Platform)\lib\DearImGui\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)Externals\Glm\include\;$(SolutionDir)Externals\Glad\include\;$(SolutionDir)Externals\spdlog\include\;$(SolutionDir)Externals\DearImGui\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+</Project>

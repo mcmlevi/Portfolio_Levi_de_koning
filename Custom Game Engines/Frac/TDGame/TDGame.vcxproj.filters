@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\EnemyManager.cpp" />
+    <ClCompile Include="src\Game.cpp" />
+    <ClCompile Include="src\LevelManager.cpp" />
+    <ClCompile Include="src\OgmoParser.cpp" />
+    <ClCompile Include="src\pch.cpp" />
+    <ClCompile Include="src\TDGame.cpp" />
+    <ClCompile Include="src\TileManager.cpp" />
+    <ClCompile Include="src\TileMap.cpp" />
+    <ClCompile Include="src\PlayerManager.cpp" />
+    <ClCompile Include="src\CameraManager.cpp" />
+    <ClCompile Include="src\Heap.cpp" />
+    <ClCompile Include="src\IEntityCreator.cpp" />
+    <ClCompile Include="src\LevelEntityCreator.cpp" />
+    <ClCompile Include="src\MouseCursorManager.cpp" />
+    <ClCompile Include="src\GameManager.cpp" />
+    <ClCompile Include="src\UIManager.cpp" />
+    <ClCompile Include="src\EnemyEntityCreator.cpp" />
+    <ClCompile Include="src\PlayerEntityCreator.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\Components.h" />
+    <ClInclude Include="include\EnemyManager.h" />
+    <ClInclude Include="include\Game.h" />
+    <ClInclude Include="include\LevelData.h" />
+    <ClInclude Include="include\LevelManager.h" />
+    <ClInclude Include="include\OgmoParser.h" />
+    <ClInclude Include="include\pch.h" />
+    <ClInclude Include="include\StaticLevelCore.h" />
+    <ClInclude Include="include\StaticLevelEnemySpawner.h" />
+    <ClInclude Include="include\StaticLevelInteractable.h" />
+    <ClInclude Include="include\StaticLevelTower.h" />
+    <ClInclude Include="include\TileManager.h" />
+    <ClInclude Include="include\TileMap.h" />
+    <ClInclude Include="include\PlayerManager.h" />
+    <ClInclude Include="include\CameraManager.h" />
+    <ClInclude Include="include\Heap.h" />
+    <ClInclude Include="include\IEntityCreator.h" />
+    <ClInclude Include="include\LevelEntityCreator.h" />
+    <ClInclude Include="include\MouseCursorManager.h" />
+    <ClInclude Include="include\GameManager.h" />
+    <ClInclude Include="include\UIManager.h" />
+    <ClInclude Include="include\EGameState.h" />
+    <ClInclude Include="include\EnemyEntityCreator.h" />
+    <ClInclude Include="include\PlayerEntityCreator.h" />
+  </ItemGroup>
+</Project>

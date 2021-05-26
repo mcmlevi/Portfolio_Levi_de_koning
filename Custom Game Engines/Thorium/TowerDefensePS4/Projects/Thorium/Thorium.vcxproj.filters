@@ -1,0 +1,605 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;cc;s;asm</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Core">
+      <UniqueIdentifier>{350580f2-6d7c-4aeb-b84a-aa4396377c8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Core">
+      <UniqueIdentifier>{92a79054-2f52-4ea5-98ab-1fd00025bdf9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Memory">
+      <UniqueIdentifier>{95a745ae-2eee-4897-a640-7117c3f37ed5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Memory">
+      <UniqueIdentifier>{1c11182e-81c2-40ff-b9c7-cd5948eb48d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Events">
+      <UniqueIdentifier>{fd8a54a5-d03e-4a07-a1d7-989f2b905444}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Events">
+      <UniqueIdentifier>{d66ceb9f-6661-4f12-bcb6-73b0f5fb2828}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Utility">
+      <UniqueIdentifier>{42511902-9988-4afc-8b6b-9de6a9663ffc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Utility">
+      <UniqueIdentifier>{12d75787-86e4-446b-86dd-99d9cd341266}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Components">
+      <UniqueIdentifier>{db9a8d2a-0623-4b64-bf41-b6e19500ea07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Components">
+      <UniqueIdentifier>{bd94c7e9-089b-453b-b2ae-89746adf511f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Input">
+      <UniqueIdentifier>{b2c5a0af-9693-446d-a9d6-eb861251adbc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Input">
+      <UniqueIdentifier>{1ba0acc3-d4e4-416b-bc91-5dcf3ed48fa4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Core\Logging">
+      <UniqueIdentifier>{e71c5e04-0aef-4c21-903e-e08fd999d297}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Core\Logging">
+      <UniqueIdentifier>{dc5a9e21-3949-4623-9a82-7409abef4031}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Core\Audio">
+      <UniqueIdentifier>{b4349917-0f32-4bd5-9eff-dc1953b2df04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Core\Audio">
+      <UniqueIdentifier>{f30547f4-70a9-43ba-9f42-a707921e9c28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\IO">
+      <UniqueIdentifier>{467ed439-6d1c-436a-860a-0d1e82a74466}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\IO">
+      <UniqueIdentifier>{bb5eabbc-4ad6-4517-8e92-a7fab9e9c79f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Grapics">
+      <UniqueIdentifier>{83278d20-2ffb-474c-8a3d-7abe473f145d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Grapics">
+      <UniqueIdentifier>{1076522b-7ff9-41ba-ae77-21c939faa800}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Grapics\ModelLoading">
+      <UniqueIdentifier>{38b1907e-85bd-4fea-a024-ff97909b91e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Grapics\ModelLoading">
+      <UniqueIdentifier>{fab06322-57b1-44c1-8131-4e249863b035}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Grapics\Imgui">
+      <UniqueIdentifier>{7aafd059-f009-413c-a0d8-c68098dc27f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Grapics\ImGui">
+      <UniqueIdentifier>{e6d3b53b-ea44-424b-9c90-5717bf943ba9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Grapics\Window">
+      <UniqueIdentifier>{b51053d0-ba99-4806-90b5-7d9d60f07433}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Grapics\PS4">
+      <UniqueIdentifier>{89af0eb6-5b67-4d47-a9f2-c7d1fbeb474c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Grapics\D3D12">
+      <UniqueIdentifier>{743adce9-767c-48b4-b0e0-7ecd74bb08af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Grapics\D3D12">
+      <UniqueIdentifier>{b36a5579-cde7-47c4-b3d2-160ed7ac043d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Grapics\RenderProfiling">
+      <UniqueIdentifier>{37e3ae55-1536-4fef-9152-0bd25f8bf2fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Grapics\PS4">
+      <UniqueIdentifier>{f2f4aeab-27d8-412a-b445-e18c8a691d9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Grapics\ImGui\Layers">
+      <UniqueIdentifier>{a27aa551-e022-4d1b-a222-1173566640c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Grapics\Imgui\Layers">
+      <UniqueIdentifier>{34bc93bc-6d13-4ccf-a36d-9fcc7f68b7ab}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\core\Core.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Memory\ThLinearAllocator.h">
+      <Filter>Header Files\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Memory\ThPoolAllocator.h">
+      <Filter>Header Files\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Memory\ThStackAllocator.h">
+      <Filter>Header Files\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Memory\ThFreeListAllocator.h">
+      <Filter>Header Files\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Memory\MemoryManager.h">
+      <Filter>Header Files\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Memory\Allocator.h">
+      <Filter>Header Files\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Memory\CAllocator.h">
+      <Filter>Header Files\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Memory\DoublyLinkedList.h">
+      <Filter>Header Files\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Memory\FreeListAllocator.h">
+      <Filter>Header Files\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Memory\LinearAllocator.h">
+      <Filter>Header Files\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Memory\PoolAllocator.h">
+      <Filter>Header Files\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Memory\SinglyLinkedList.h">
+      <Filter>Header Files\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Memory\StackLinkedList.h">
+      <Filter>Header Files\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Memory\Utils.h">
+      <Filter>Header Files\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Memory\StackAllocator.h">
+      <Filter>Header Files\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Core\Systems.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Core\WorldManager.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Core\ResourceManager.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Core\Resource.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Events\EventArgs.h">
+      <Filter>Header Files\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Resources\Mesh.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Resources\Texture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Resources\Material.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Thpch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Utility\d3dx12.h">
+      <Filter>Header Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Utility\Timer.h">
+      <Filter>Header Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Events\Delegate.h">
+      <Filter>Header Files\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Core\EntryPoint.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Events\InputHandler.h">
+      <Filter>Header Files\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Events\KeyCodes.h">
+      <Filter>Header Files\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Components\AmbientLightComponent.h">
+      <Filter>Header Files\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Components\ModelComponent.h">
+      <Filter>Header Files\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Components\TransformComponent.h">
+      <Filter>Header Files\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Components\LightComponent.h">
+      <Filter>Header Files\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Events\EventMessenger.h">
+      <Filter>Header Files\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Input\WinController.h">
+      <Filter>Header Files\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Input\IController.h">
+      <Filter>Header Files\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Input\ControllerState.h">
+      <Filter>Header Files\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Core\MessageLogger.h">
+      <Filter>Header Files\Core\Logging</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Core\Audio\AudioManager.h">
+      <Filter>Header Files\Core\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Core\Audio\AudioComponent.h">
+      <Filter>Header Files\Core\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Core\Audio\AudioSystem.h">
+      <Filter>Header Files\Core\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\Renderer.h">
+      <Filter>Header Files\Grapics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\RenderContext.h">
+      <Filter>Header Files\Grapics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\Window\Win32Window.h">
+      <Filter>Header Files\Grapics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\Window\Window.h">
+      <Filter>Header Files\Grapics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Resources\Shader.h">
+      <Filter>Header Files\Grapics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\ModelLoading\IModelFactory.h">
+      <Filter>Header Files\Grapics\ModelLoading</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\ModelLoading\ObjFactoryWin.h">
+      <Filter>Header Files\Grapics\ModelLoading</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\ModelLoading\ObjFactory.h">
+      <Filter>Header Files\Grapics\ModelLoading</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Components\CameraComponent.h">
+      <Filter>Header Files\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\ImGui\imgui.h">
+      <Filter>Header Files\Grapics\Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\ImGui\imgui_impl_dx12.h">
+      <Filter>Header Files\Grapics\Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\ImGui\imgui_internal.h">
+      <Filter>Header Files\Grapics\Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\ImGui\imgui_impl_win32.h">
+      <Filter>Header Files\Grapics\Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\ImGui\imstb_rectpack.h">
+      <Filter>Header Files\Grapics\Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\ImGui\imstb_textedit.h">
+      <Filter>Header Files\Grapics\Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\ImGui\imstb_truetype.h">
+      <Filter>Header Files\Grapics\Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\ImGui\imconfig.h">
+      <Filter>Header Files\Grapics\Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\D3D12\D3D12CommandQueue.h">
+      <Filter>Header Files\Grapics\D3D12</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\D3D12\D3D12Device.h">
+      <Filter>Header Files\Grapics\D3D12</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\D3D12\D3D12RenderContext.h">
+      <Filter>Header Files\Grapics\D3D12</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\D3D12\D3D12Renderer.h">
+      <Filter>Header Files\Grapics\D3D12</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\D3D12\D3DCommandQueue.h">
+      <Filter>Header Files\Grapics\D3D12</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Utility\D3DErrorHandler.h">
+      <Filter>Header Files\Grapics\D3D12</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\RenderProfiling\RenderProfile.h">
+      <Filter>Header Files\Grapics\RenderProfiling</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\RenderProfiling\RenderProfileType.h">
+      <Filter>Header Files\Grapics\RenderProfiling</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\RenderProfiling\D3D12RenderProfile.h">
+      <Filter>Header Files\Grapics\RenderProfiling</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Resources\D3D12\D3D12Buffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Resources\D3D12\D3D12Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Resources\D3D12\D3D12VertexBuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Resources\D3D12\D3D12IndexBuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Resources\D3D12\D3D12Mesh.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\D3D12\D3D12CommandList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\IO\stb_image.h">
+      <Filter>Header Files\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\ModelLoading\GLTFFactory.h">
+      <Filter>Header Files\Grapics\ModelLoading</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\ModelLoading\GLTFFactoryWin.h">
+      <Filter>Header Files\Grapics\ModelLoading</Filter>
+    </ClInclude>
+    <ClInclude Include="include\IO\json.hpp">
+      <Filter>Header Files\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="include\IO\stb_image_write.h">
+      <Filter>Header Files\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="include\IO\tiny_gltf.h">
+      <Filter>Header Files\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\RenderCore.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\RenderDevice.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\DebugRenderer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\D3D12\D3D12DebugRenderer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\ImGui\D3D12ImGuiInstance.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Resources\D3D12\D3D12Vertex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Resources\EModelFileType.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Resources\D3D12\D3D12Shader.h">
+      <Filter>Header Files\Grapics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\ResourceLoader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\D3D12\D3D12ResourceLoader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Resources\Vertex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Components\NameComponent.h">
+      <Filter>Header Files\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\ImGui\ImGuizmo.h">
+      <Filter>Header Files\Grapics\Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Memory\MemoryDefines.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Resources\D3D12\D3D12UploadBuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\ImGui\Layers\IImguiLayer.h">
+      <Filter>Header Files\Grapics\Imgui\Layers</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\ImGui\Layers\DockingLayer.h">
+      <Filter>Header Files\Grapics\Imgui\Layers</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\ImGui\Layers\SceneGraphLayer.h">
+      <Filter>Header Files\Grapics\Imgui\Layers</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\ImGui\Layers\ConsoleLayer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\IO\tiny_obj_loader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Components\BoxColliderComponent.h">
+      <Filter>Header Files\Components</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\core\Core.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Memory\MemoryManager.cpp">
+      <Filter>Source Files\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Memory\Allocator.cpp">
+      <Filter>Source Files\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Memory\CAllocator.cpp">
+      <Filter>Source Files\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Memory\FreeListAllocator.cpp">
+      <Filter>Source Files\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Memory\LinearAllocator.cpp">
+      <Filter>Source Files\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Memory\PoolAllocator.cpp">
+      <Filter>Source Files\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Memory\StackAllocator.cpp">
+      <Filter>Source Files\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Core\Systems.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Core\WorldManager.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Core\ResourceManager.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Core\Resource.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Events\EventArgs.cpp">
+      <Filter>Source Files\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Thpch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Events\Delegate.cpp">
+      <Filter>Source Files\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Utility\Timer.cpp">
+      <Filter>Source Files\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Events\InputHandler.cpp">
+      <Filter>Source Files\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Components\TransformComponent.cpp">
+      <Filter>Source Files\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Events\EventMessenger.cpp">
+      <Filter>Source Files\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Input\WinController.cpp">
+      <Filter>Source Files\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Input\IController.cpp">
+      <Filter>Source Files\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Core\MessageLogger.cpp">
+      <Filter>Source Files\Core\Logging</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Components\ModelComponent.cpp">
+      <Filter>Source Files\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Core\Audio\AudioManager.cpp">
+      <Filter>Source Files\Core\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Core\Audio\AudioComponent.cpp">
+      <Filter>Source Files\Core\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Core\Audio\AudioSystem.cpp">
+      <Filter>Source Files\Core\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Graphics\ModelLoading\IModelFactory.cpp">
+      <Filter>Source Files\Grapics\ModelLoading</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Graphics\ModelLoading\ObjFactoryWin.cpp">
+      <Filter>Source Files\Grapics\ModelLoading</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Components\CameraComponent.cpp">
+      <Filter>Source Files\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Graphics\ImGui\imgui.cpp">
+      <Filter>Source Files\Grapics\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Graphics\ImGui\imgui_draw.cpp">
+      <Filter>Source Files\Grapics\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Graphics\ImGui\imgui_impl_dx12.cpp">
+      <Filter>Source Files\Grapics\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Graphics\ImGui\imgui_impl_win32.cpp">
+      <Filter>Source Files\Grapics\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Graphics\ImGui\imgui_widgets.cpp">
+      <Filter>Source Files\Grapics\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Graphics\Window\Win32Window.cpp">
+      <Filter>Source Files\Grapics\Window</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Graphics\D3D12\D3D12CommandQueue.cpp">
+      <Filter>Source Files\Grapics\D3D12</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Graphics\D3D12\D3D12Device.cpp">
+      <Filter>Source Files\Grapics\D3D12</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Graphics\D3D12\D3D12RenderContext.cpp">
+      <Filter>Source Files\Grapics\D3D12</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Graphics\D3D12\D3D12Renderer.cpp">
+      <Filter>Source Files\Grapics\D3D12</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Utility\D3DErrorHandler.cpp">
+      <Filter>Source Files\Grapics\D3D12</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Graphics\ImGui\imgui_demo.cpp">
+      <Filter>Source Files\Grapics\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Resources\D3D12\D3D12Resource.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Resources\D3D12\D3D12Buffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Resources\D3D12\D3D12VertexBuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Resources\D3D12\D3D12IndexBuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Graphics\D3D12\D3D12CommandList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Resources\D3D12\D3D12Mesh.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Graphics\ModelLoading\GLTFFactoryWin.cpp">
+      <Filter>Source Files\Grapics\ModelLoading</Filter>
+    </ClCompile>
+    <ClCompile Include="src\IO\tiny_gltf.cc">
+      <Filter>Source Files\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Graphics\RenderCore.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Graphics\D3D12\D3D12DebugRenderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Graphics\ImGui\D3D12ImGuiInstance.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Resources\D3D12\D3D12Shader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Resources\D3D12\D3D12Vertex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Graphics\D3D12\D3D12ResourceLoader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Graphics\ImGui\ImGuizmo.cpp">
+      <Filter>Source Files\Grapics\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Resources\D3D12\D3D12UploadBuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Graphics\ImGui\Layers\SceneGraphLayer.cpp">
+      <Filter>Source Files\Grapics\ImGui\Layers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Graphics\ImGui\Layers\DockingLayer.cpp">
+      <Filter>Source Files\Grapics\ImGui\Layers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Graphics\ImGui\Layers\ConsoleLayer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Components\LightComponent.cpp">
+      <Filter>Source Files\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\IO\tiny_obj_loader.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

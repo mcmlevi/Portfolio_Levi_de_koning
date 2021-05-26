@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Src\CameraSystem.cpp" />
+    <ClCompile Include="Src\EnemyComponent.cpp" />
+    <ClCompile Include="Src\EnemySystem.cpp" />
+    <ClCompile Include="Src\IMapParser.cpp" />
+    <ClCompile Include="Src\JsonParser.cpp" />
+    <ClCompile Include="Src\LevelManager.cpp" />
+    <ClCompile Include="Src\pch.cpp" />
+    <ClCompile Include="Src\PlayerSystem.cpp" />
+    <ClCompile Include="Src\ProjectileComponent.cpp" />
+    <ClCompile Include="Src\ProjectileSystem.cpp" />
+    <ClCompile Include="Src\Ray.cpp" />
+    <ClCompile Include="Src\TBRGame.cpp" />
+    <ClCompile Include="Src\Tile.cpp" />
+    <ClCompile Include="Src\InteractAbleComponent.cpp" />
+    <ClCompile Include="Src\TileMap.cpp" />
+    <ClCompile Include="Src\TowerComponent.cpp" />
+    <ClCompile Include="Src\TowerSystem.cpp" />
+    <ClCompile Include="Src\PathFindingComponent.cpp" />
+    <ClCompile Include="Src\WaveSystem.cpp" />
+    <ClCompile Include="Src\Heap.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Include\CameraSystem.h" />
+    <ClInclude Include="Include\EnemyComponent.h" />
+    <ClInclude Include="Include\EnemySystem.h" />
+    <ClInclude Include="Include\IMapParser.h" />
+    <ClInclude Include="Include\InteractAbleComponent.h" />
+    <ClInclude Include="Include\JsonParser.h" />
+    <ClInclude Include="Include\LevelManager.h" />
+    <ClInclude Include="Include\pch.h" />
+    <ClInclude Include="Include\PlayerSystem.h" />
+    <ClInclude Include="Include\ProjectileComponent.h" />
+    <ClInclude Include="Include\ProjectileSystem.h" />
+    <ClInclude Include="Include\Ray.h" />
+    <ClInclude Include="Include\TBRGame.h" />
+    <ClInclude Include="Include\Tile.h" />
+    <ClInclude Include="Include\TileMap.h" />
+    <ClInclude Include="Include\TowerComponent.h" />
+    <ClInclude Include="Include\TowerSystem.h" />
+    <ClInclude Include="Include\PathFindingComponent.h" />
+    <ClInclude Include="Include\WaveSystem.h" />
+    <ClInclude Include="Include\Heap.h" />
+  </ItemGroup>
+</Project>

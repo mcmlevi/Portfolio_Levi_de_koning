@@ -1,0 +1,180 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.5.17",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "imported_Meshes"
+        }
+    ],
+    "materials" : [
+        {
+            "emissiveTexture" : {
+                "index" : 0
+            },
+            "name" : "turrets3.002",
+            "normalTexture" : {
+                "index" : 1
+            },
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 2
+                },
+                "metallicFactor" : 0,
+                "roughnessFactor" : 0.30000001192092896
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Mesh_0.010",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TANGENT" : 2,
+                        "TEXCOORD_0" : 3,
+                        "TEXCOORD_1" : 4
+                    },
+                    "indices" : 5,
+                    "material" : 0
+                }
+            ]
+        }
+    ],
+    "textures" : [
+        {
+            "sampler" : 0,
+            "source" : 0
+        },
+        {
+            "sampler" : 0,
+            "source" : 1
+        },
+        {
+            "sampler" : 0,
+            "source" : 2
+        }
+    ],
+    "images" : [
+        {
+            "mimeType" : "image/png",
+            "name" : "Pack_3_EMISS",
+            "uri" : "Pack_3_EMISS.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "Pack_3_NM",
+            "uri" : "Pack_3_NM.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "Pack_3_ALB",
+            "uri" : "Pack_3_ALB.png"
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 3150,
+            "max" : [
+                0.16669559478759766,
+                0.5270809531211853,
+                0.23305654525756836
+            ],
+            "min" : [
+                -0.16669559478759766,
+                -0.0005600174772553146,
+                -0.26995372772216797
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 3150,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 3150,
+            "type" : "VEC4"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5126,
+            "count" : 3150,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5126,
+            "count" : 3150,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 5,
+            "componentType" : 5123,
+            "count" : 3150,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 37800,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 37800,
+            "byteOffset" : 37800
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 50400,
+            "byteOffset" : 75600
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 25200,
+            "byteOffset" : 126000
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 25200,
+            "byteOffset" : 151200
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 6300,
+            "byteOffset" : 176400
+        }
+    ],
+    "samplers" : [
+        {
+            "magFilter" : 9729,
+            "minFilter" : 9987
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 182700,
+            "uri" : "11.bin"
+        }
+    ]
+}

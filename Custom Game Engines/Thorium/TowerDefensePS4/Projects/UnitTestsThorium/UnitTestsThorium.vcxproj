@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ORBIS">
+      <Configuration>Debug</Configuration>
+      <Platform>ORBIS</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ORBIS">
+      <Configuration>Release</Configuration>
+      <Platform>ORBIS</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{55975DED-0478-4F73-9A0A-971BF20C3FE3}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>UnitTestsThorium</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectSubType>NativeUnitTestProject</ProjectSubType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <PlatformToolset>v142</PlatformToolset>
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">
+    <PlatformToolset>Clang</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">
+    <PlatformToolset>Clang</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\PropertySheets\Win64Props.props" />
+    <Import Project="..\PropertySheets\UnitTestsThoriumProps.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\PropertySheets\Win64Props.props" />
+    <Import Project="..\PropertySheets\UnitTestsThoriumProps.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">
+    <Import Project="..\PropertySheets\ORBISProps.props" />
+    <Import Project="..\PropertySheets\UnitTestsThoriumProps.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">
+    <Import Project="..\PropertySheets\ORBISProps.props" />
+    <Import Project="..\PropertySheets\UnitTestsThoriumProps.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(SolutionDir)Thorium\include;$(SolutionDir)nlohman;$(SolutionDir)Projects\Thorium\include\Memory;$(SolutionDir)Projects\Thorium\deps\signals;$(SolutionDir)Projects\Thorium\deps\spdlog\include;$(SolutionDir)Projects\Thorium\deps\FMOD\Windows\core\inc\;$(SolutionDir)Projects\Thorium\deps\FMOD\Windows\studio\inc\;$(SolutionDir)Projects\Thorium\deps\FMOD\Windows\fsbank\inc\;$(SolutionDir)Projects\Thorium\deps\glm;$(SolutionDir)Projects\Thorium\deps\</IncludePath>
+    <OutDir>$(SolutionDir)bin\$(ProjectName)\$(Platform)-$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)bin\int\$(ProjectName)\$(Platform)-$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(SolutionDir)Thorium\include;$(IncludePath);$(SolutionDir)Thorium\include\Memory;$(SolutionDir)Projects\Thorium\deps\signals;$(SolutionDir)Projects\Thorium\deps\FMOD\Windows\core\inc\;$(SolutionDir)Projects\Thorium\deps\FMOD\Windows\studio\inc\;$(SolutionDir)Projects\Thorium\deps\FMOD\Windows\fsbank\inc\;$(SolutionDir)Projects\Thorium\deps\glm\;$(SolutionDir)Projects\Thorium\deps\spdlog\include;$(SolutionDir)Projects\Thorium\deps\</IncludePath>
+    <OutDir>$(SolutionDir)bin\$(ProjectName)\$(Platform)-$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)bin\int\$(ProjectName)\$(Platform)-$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">
+    <OutDir>$(SolutionDir)bin\$(ProjectName)\$(Platform)-$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)bin\int\$(ProjectName)\$(Platform)-$(Configuration)\</IntDir>
+    <IncludePath>$(SolutionDir)\Projects\Thorium\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(VCInstallDir)Auxiliary\VS\UnitTest\lib</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">
+    <OutDir>$(SolutionDir)bin\$(ProjectName)\$(Platform)-$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)bin\int\$(ProjectName)\$(Platform)-$(Configuration)\</IntDir>
+    <IncludePath>$(SolutionDir)\Projects\Thorium\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(VCInstallDir)Auxiliary\VS\UnitTest\lib</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>$(SolutionDir)Projects\Thorium\deps\FMOD\Windows\core\inc\;$(SolutionDir)Projects\Thorium\deps\FMOD\Windows\studio\inc\;$(SolutionDir)Projects\Thorium\deps\FMOD\Windows\fsbank\inc\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;PLATFORM_WIN64;PLATFORM_PS4;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>Thpch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(VCInstallDir)UnitTest\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)Projects\Thorium\deps\FMOD\Windows\core\inc\;$(SolutionDir)Projects\Thorium\deps\FMOD\Windows\studio\inc\;$(SolutionDir)Projects\Thorium\deps\FMOD\Windows\fsbank\inc\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;PLATFORM_WIN64;PLATFORM_PS4;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <UseFullPaths>true</UseFullPaths>
+      <PrecompiledHeaderFile>Thpch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(SolutionDir)Projects\Thorium\deps\FMOD\Windows\core\lib\x64\;$(SolutionDir)Projects\Thorium\deps\FMOD\Windows\studio\lib\x64\</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">
+    <ClCompile>
+      <CppLanguageStd>Cpp17</CppLanguageStd>
+      <PreprocessorDefinitions>_PS4;_DEBUG</PreprocessorDefinitions>
+      <CLanguageStd>C11</CLanguageStd>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">
+    <ClCompile>
+      <CppLanguageStd>Cpp17</CppLanguageStd>
+      <PreprocessorDefinitions>_PS4;_RELEASE</PreprocessorDefinitions>
+      <CLanguageStd>C11</CLanguageStd>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Thpch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Thorium\Thorium.vcxproj">
+      <Project>{4f6dfe8f-4b7c-4f9a-a17d-d7f83b611028}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="doctest.h" />
+    <ClInclude Include="Thpch.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

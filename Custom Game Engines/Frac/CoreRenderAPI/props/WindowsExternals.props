@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)Externals\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Externals\Glad\include;$(SolutionDir)Externals\GLFW\include;$(SolutionDir)Externals\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Externals\Glm\include\;$(SolutionDir)Externals\GLFW\include\;$(SolutionDir)Externals\Glad\include\;$(SolutionDir)Externals\spdlog\include\;$(SolutionDir)Externals\DearImGui\include\;$(SolutionDir)Externals\Flecs\include\;$(SolutionDir)Externals\stb_image\include;$(SolutionDir)Externals\tinygltf\include;$(SolutionDir)Externals\Nlohmann\include;$(SolutionDir)CoreRenderAPI\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;glfw3.lib;Glad.lib;Flecs.lib;Glm.lib;DearImGui.lib;OpenGLRenderer.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)Externals\GLFW\include\GLFW\;$(SolutionDir)bin\$(Configuration)\$(Platform)\lib\Glad\;$(SolutionDir)bin\$(Configuration)\$(Platform)\lib\Flecs\;$(SolutionDir)bin\$(Configuration)\$(Platform)\lib\Glm\;$(SolutionDir)bin\$(Configuration)\$(Platform)\lib\DearImGui\;$(SolutionDir)bin\$(Configuration)\$(Platform)\renderdlls\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+</Project>

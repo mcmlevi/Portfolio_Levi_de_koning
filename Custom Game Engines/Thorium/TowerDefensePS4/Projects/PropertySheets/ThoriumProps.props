@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <DependencyDir>$(ProjectDir)deps\</DependencyDir>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OutDir>$(SolutionDir)bin\$(ProjectName)\$(Platform)-$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)bin\int\$(ProjectName)\$(Platform)-$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir)include\;$(ProjectDir)deps\;$(ProjectDir)deps\FMOD\PS4\fsbank\inc\;$(ProjectDir)deps\FMOD\PS4\studio\inc\;$(ProjectDir)deps\FMOD\PS4\core\inc\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <BuildMacro Include="DependencyDir">
+      <Value>$(DependencyDir)</Value>
+    </BuildMacro>
+  </ItemGroup>
+</Project>

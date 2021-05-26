@@ -1,0 +1,173 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.5.17",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "imported_Meshes"
+        }
+    ],
+    "materials" : [
+        {
+            "emissiveFactor" : [
+                1,
+                1,
+                0
+            ],
+            "emissiveTexture" : {
+                "index" : 0
+            },
+            "name" : "Enemies.013",
+            "normalTexture" : {
+                "index" : 1
+            },
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 2
+                },
+                "metallicFactor" : 0,
+                "roughnessFactor" : 0.30000001192092896
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Mesh_0.013",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TANGENT" : 2,
+                        "TEXCOORD_0" : 3
+                    },
+                    "indices" : 4,
+                    "material" : 0
+                }
+            ]
+        }
+    ],
+    "textures" : [
+        {
+            "sampler" : 0,
+            "source" : 0
+        },
+        {
+            "sampler" : 0,
+            "source" : 1
+        },
+        {
+            "sampler" : 0,
+            "source" : 2
+        }
+    ],
+    "images" : [
+        {
+            "mimeType" : "image/png",
+            "name" : "Enemies_EMISS",
+            "uri" : "Enemies_EMISS.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "Enemies_NM",
+            "uri" : "Enemies_NM.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "Enemies_ALB",
+            "uri" : "Enemies_ALB.png"
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 1308,
+            "max" : [
+                0.12434522807598114,
+                0.04845402017235756,
+                0.13571316003799438
+            ],
+            "min" : [
+                -0.12434527277946472,
+                -0.04845406487584114,
+                -0.13571321964263916
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 1308,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 1308,
+            "type" : "VEC4"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5126,
+            "count" : 1308,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5123,
+            "count" : 1308,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 15696,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 15696,
+            "byteOffset" : 15696
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 20928,
+            "byteOffset" : 31392
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 10464,
+            "byteOffset" : 52320
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 2616,
+            "byteOffset" : 62784
+        }
+    ],
+    "samplers" : [
+        {
+            "magFilter" : 9729,
+            "minFilter" : 9987
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 65400,
+            "uri" : "Enemy_Cannon.bin"
+        }
+    ]
+}

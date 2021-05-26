@@ -1,0 +1,58 @@
+﻿{
+  "levelData": [
+    {
+      "m_levelId": 0,
+      "m_levelName": "Level1.json",
+      "m_levelTargetScore": 1000,
+      "m_levelWaves" :  10,
+      "camStartPosition": 
+        {
+          "x": 110,
+          "y": 20,
+          "z": 150
+        }
+      ,
+      "camStartrotation": 
+        {
+          "x": 20,
+          "y": 90,
+          "z": 50
+        }
+      
+    },
+    {
+      "m_levelId": 1,
+      "m_levelName": "Level2.json",
+      "m_levelTargetScore": 1500,
+      "m_levelWaves": 15,
+      "camStartPosition": {
+        "x": 3230,
+        "y": 40,
+        "z": 800
+      },
+      "camStartrotation": {
+        "x": 10,
+        "y": 30,
+        "z": 0
+      }
+
+    },
+    {
+      "m_levelId": 2,
+      "m_levelName": "Level3.json",
+      "m_levelTargetScore": 5000,
+      "m_levelWaves": 20,
+      "camStartPosition": {
+        "x": 43430,
+        "y": 1200,
+        "z": -330
+      },
+      "camStartrotation": {
+        "x": 100,
+        "y": 20,
+        "z": 30
+      }
+
+    }
+  ]
+}
