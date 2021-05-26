@@ -78,7 +78,7 @@ In my free time I am / was working on a new raytracer that focused even more on 
 
 # Wacky noodle
 ![WackyNoodle_Promo_WithLogo](https://user-images.githubusercontent.com/39926733/119739684-df851980-be82-11eb-9d5f-ee175833957a.png)
-Wacky noodle is a game we released on [itch.io](https://buas.itch.io/wacky-noodle), This Project was made unreal engine over the course of 4 weeks. It has local multiplayer support. The team consisted of 2 programmers, 3 artists and 4 designers. 
+Wacky noodle is a game we released on [itch.io](https://buas.itch.io/wacky-noodle), This Project was made unreal engine over the course of 8 weeks. It has local multiplayer support. The team consisted of 2 programmers, 3 artists and 4 designers.  
 
 Have you ever dreamed of being a great jousting knight?
 Dashing around on your noble steed and knocking other honorable knights of their horses?
