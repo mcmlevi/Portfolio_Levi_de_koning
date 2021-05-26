@@ -33,6 +33,8 @@ Frac is the second generation custom game engine and is the combined effort of 7
 - improved scalability
 - full nitendo switch support 
 
+For this engine I also tried applying knowledge I have learned from books such as clean architecture and data oriented design. as well as programming patterns and using 3D game engine design as a tool with some engine design problems such as tackeling input as well as engine entry / construction.
+
 # CPU RayTracer
 
 ![DOF](https://user-images.githubusercontent.com/39926733/119718849-5e208d80-be68-11eb-9e7a-fb83c2e16846.png)
