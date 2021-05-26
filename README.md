@@ -7,6 +7,32 @@ This Repo Contains the Following Projects:
 - Wacky Noodle
 - Thorium and Frac custom Game engines
 
+# Custom Game Engines
+Year 2 main focus was custom game engines. For this year there where 2 main game engines we worked on namely Thorium and Frac. Thorium spanned for 8 weeks during the first semester of year 2 and Frac has been in development in one way or another for the third semester of year 2 and will run till june 2021. With the final goal releasing a game on itch.io
+
+## Thorium
+![screen](https://user-images.githubusercontent.com/39926733/119725216-fa01c780-be6f-11eb-9c34-e966f7acc416.PNG)
+
+Thorium was developed with a team of 6 programmers, 2 Gameplay Programmers , 2 engine programmers and 1 graphics programmer. During this project I worked mainly on the engine itself and supporting other developers wherever neccesairy. Thorium was a great learning opertunity and tought me a lot about design and scalability. these points are also why thorium in the end failed as a project. We managed to write a game on it however development became harder and harder as we made some descision that made the code base not great to use and time preasure made us not able to fix these issues. However all these problems served as a learning oppertunity for the 2nd generation of custom game engines Frac. Where I took the things I learned and tried to write an engine that was easier to use and scalable. and avoid the pitfalls I walked in the first time when writing a project of this scale something I had never done before. and never with such a big team. 
+
+Some of the featues of Thorium:
+- Obj model loading
+- Audio support using Fmod
+- partial PS4 support
+- custom memory allocators using https://github.com/mtrebi/memory-allocators and expended to support the ps4. 
+
+## Frac
+![Frac](https://user-images.githubusercontent.com/39926733/119726440-6630fb00-be71-11eb-9012-ef0e85ad9642.png)
+
+Frac is the second generation custom game engine and is the combined effort of 7 programmers, 2 graphics programmers, 2 engine programmer, 1 tools / engine programmer and 2 gameplay programmers. I served as the main engine programmer for this project. The group is 50/50 made of programmers that worked on Thorium and programmers that worked on another tower defense engine made for the nintendo switch. As neither team had all programmers left that worked on the orgininal engine and we all agreed both engines either had  issues or where to complex to use. So we decided to start over with a new engine That hopefully would be clear for all teamembers how to use and would be an improvement from it's predecessor. This engine also got nummerous improvements over the old engine. 
+
+- Certain bugs that where present in the old engines didn't exist in this one mainly the transforms.
+- Debug line renderer
+- Text renderer
+- GLTF model loading with a PBR shaders
+- improved scalability
+- full nitendo switch support 
+
 # CPU RayTracer
 
 ![DOF](https://user-images.githubusercontent.com/39926733/119718849-5e208d80-be68-11eb-9e7a-fb83c2e16846.png)
