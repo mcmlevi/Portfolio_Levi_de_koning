@@ -10,6 +10,8 @@ This Repo Contains the Following Projects:
 # Custom Game Engines
 Year 2 main focus was custom game engines. For this year there where 2 main game engines we worked on namely Thorium and Frac. Thorium spanned for 8 weeks during the first semester of year 2 and Frac has been in development in one way or another for the third semester of year 2 and will run till june 2021. With the final goal releasing a game on itch.io
 
+These projects arent fully compilable due to not being able to share all needed files due to NDA so they can only be used as a reference on the github page itself. 
+
 ## Thorium
 ![screen](https://user-images.githubusercontent.com/39926733/119725216-fa01c780-be6f-11eb-9c34-e966f7acc416.PNG)
 
@@ -21,6 +23,13 @@ Some of the featues of Thorium:
 - partial PS4 support
 - custom memory allocators using https://github.com/mtrebi/memory-allocators and expended to support the ps4. 
 
+### What did I do for the project?
+As mentioned above I mainly focused on the engine and almost had no hands in the engine and gameplay code. 
+Some of the the files I worked on for this project:
+- [Message logger](https://github.com/mcmlevi/Portfolio_Levi_de_koning/blob/main/Custom%20Game%20Engines/Thorium/TowerDefensePS4/Projects/Thorium/include/Core/MessageLogger.h)
+- [input handler](https://github.com/mcmlevi/Portfolio_Levi_de_koning/blob/main/Custom%20Game%20Engines/Thorium/TowerDefensePS4/Projects/Thorium/include/Events/InputHandler.h)
+- [event dispatcher](https://github.com/mcmlevi/Portfolio_Levi_de_koning/blob/main/Custom%20Game%20Engines/Thorium/TowerDefensePS4/Projects/Thorium/include/Events/EventMessenger.h)
+- [memory manager](https://github.com/mcmlevi/Portfolio_Levi_de_koning/blob/main/Custom%20Game%20Engines/Thorium/TowerDefensePS4/Projects/Thorium/include/Memory/MemoryManager.h)
 ## Frac
 ![Frac](https://user-images.githubusercontent.com/39926733/119726440-6630fb00-be71-11eb-9012-ef0e85ad9642.png)
 
@@ -31,7 +40,7 @@ Frac is the second generation custom game engine and is the combined effort of 7
 - Text renderer
 - GLTF model loading with a PBR shaders
 - improved scalability
-- full nitendo switch support 
+- nitendo switch support 
 
 For this engine I also tried applying knowledge I have learned from books such as clean architecture and data oriented design. as well as programming patterns and using 3D game engine design as a tool with some engine design problems such as tackeling input as well as engine entry / construction.
 
