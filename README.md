@@ -1,5 +1,5 @@
 # What is this Repository?
-This is a reposotory containing projects I worked on during my time at Breda University of applied sciences. Some of these projects Are projects I worked on alone and some projects where made in a bigger group. The goal of this repo is to showcase some of the projects I worked on and what my contributions where. As my portfolio website doesn't realy allow for that like github does.
+This is a Repository containing projects I worked on during my time at Breda University of applied sciences. Some of these projects Are projects I worked on alone and some projects where made in a bigger group. The goal of this repo is to showcase some of the projects I worked on and what my contributions where. As my portfolio website doesn't realy allow for that like github does.
 
 This Repo Contains the Following Projects:
 
